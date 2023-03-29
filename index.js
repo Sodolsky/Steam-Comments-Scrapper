@@ -23,7 +23,6 @@ import puppeteer from "puppeteer";
       localArr.push(cleanedString);
     }
     arrayOfComments.push(localArr);
-    console.log(page.url());
     await page.goto(`${defaultLink}ctp=${i + 1}`);
   }
   console.log(arrayOfComments[0][0], arrayOfComments[1][0]);
