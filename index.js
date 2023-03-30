@@ -25,8 +25,8 @@ import puppeteer from "puppeteer";
     arrayOfComments.push(localArr);
     await page.goto(`${defaultLink}ctp=${i + 1}`);
   }
-  console.log(arrayOfComments[0][0], arrayOfComments[1][0]);
-  console.log(arrayOfComments.flat(2).length);
+  // console.log(arrayOfComments[0][0], arrayOfComments[1][0]);
+  // console.log(arrayOfComments.flat(2).length);
 
   await browser.close();
 })();
