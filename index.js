@@ -21,7 +21,6 @@ const getUserComments = async () => {
   const arrayOfComments = [];
   await page.setViewport({ width: 1080, height: 1024 });
   for (let i = 0; i < numberOfPages; i++) {
-    console.log(page.url());
     console.log(`Progress:${(i / numberOfPages).toFixed(2) * 100}%`);
     const pageSwitchButtons = await page.$$(nextPageSelector);
     const nextPageSelectorButton =
